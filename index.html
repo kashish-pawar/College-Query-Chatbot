@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GPCK Enquiry ChatBot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+ <nav class="navbar">
+  <div class="navbar-header">
+    <div class="logo">🎓 GPCK Enquiry ChatBot</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+  </div>
+    <ul class="nav-links" id="nav-links">
+    <li><a href="#">Home</a></li>
+      <li><a href="#" data-section="about">About Us</a></li>      
+      <!-- About Modal -->
+<!-- Modal -->
+<div id="aboutModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h2>About Us</h2>
+
+    <img src="images/good-colleges.webp" alt="College Image" class="about-image" />
+
+    <div class="about-text">
+      <p>
+        Located in the educational hub of Rajasthan, Government Polytechnic College, Kota (GPCK) is one of the most reputed and long-established government technical institutes in the state. Since its inception in 1960, the college has been committed to delivering quality technical education and fostering the overall development of students through skill-based training and academic excellence.
+      </p>
+      <p>
+        Initially started with core engineering branches like Civil, Mechanical, and Electrical Engineering, the institute has progressively expanded its academic offerings over the decades. New diploma programs such as Instrumentation Engineering (1971), Chemical Engineering (1974), Electronics Engineering (1986), Plastic Technology (1991), and Computer Science & Engineering (2001) were added, making it a comprehensive center for technical learning.
+      </p>
+      <p>
+        Currently, the institute offers eight full-time diploma engineering programs. Government Polytechnic College, Kota functions under the Department of Technical Education, Government of Rajasthan, and is affiliated with the Board of Technical Education Rajasthan, Jodhpur. All its programs are approved by AICTE, New Delhi.
+      </p>
+      <p>
+        Currently, the institute offers eight full-time diploma engineering programs. Government Polytechnic College, Kota functions under the Department of Technical Education, Government of Rajasthan, and is affiliated with the Board of Technical Education Rajasthan, Jodhpur. All its programs are approved by AICTE, New Delhi.
+      </p>
+      <p>
+        Currently, the institute offers eight full-time diploma engineering programs. Government Polytechnic College, Kota functions under the Department of Technical Education, Government of Rajasthan, and is affiliated with the Board of Technical Education Rajasthan, Jodhpur. All its programs are approved by AICTE, New Delhi.
+      </p>
+      <p>
+        The college emphasizes industry-oriented learning and skill development, ensuring students are ready to meet the demands of the modern workforce.
+      </p>
+    </div>
+
+    <button class="close-btn">Close</button>
+  </div>
+</div>
+
+
+      <li><a href="#">Suggestion box</a></li>
+    <li><a href="#" id="logout-btn">Log Out</a></li>
+  </ul>
+</nav>
+
+  <main class="chat-container">
+    <div id="chat-box">
+      <div class="bot-message">
+        <img src="images/good-colleges.webp" alt="Bot" />
+        <div class="message-content">
+          <p class="bot-name">GPCK ChatBot</p>
+          <p class="b1">Hi there, Welcome to College Enquiry ChatBot! If you need any assistance, I'm always here.</p>
+          <!-- <span class="time">12:11</span> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <input style="font-size: 1rem; color: #511864; border:2px solid black;" type="text" id="user-input" placeholder="Ask your Query about GPCK..." />
+      <button id="send-btn" style="background-image: linear-gradient(to right, #4362c7, #b06ab3); color:black; font-size:1.5rem;" >Send</button> <!-- Added missing ID -->
+    </div>
+  </main>
+
+  <script src="qa.js"></script> <!-- Optional: if using separate QA file -->
+
+  <script src="script.js"></script>
+</body>
+</html>
