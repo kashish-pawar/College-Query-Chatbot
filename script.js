@@ -106,3 +106,42 @@ document.getElementById("logout-btn").addEventListener("click", function () {
   // Chatbot band karo
   document.getElementById("chatbot-container").style.display = "none";
 });
+
+
+// -------------------- Suggestion Box --------------------
+
+const suggestionModal = document.getElementById("suggestionModal");
+const suggestionBtn = document.getElementById("suggestion-btn");
+const closeSuggestion = document.querySelector(".close-suggestion");
+const submitSuggestion = document.getElementById("submit-suggestion");
+
+// OPEN MODAL
+suggestionBtn.addEventListener("click", () => {
+  suggestionModal.style.display = "block";
+});
+
+// CLOSE MODAL
+closeSuggestion.addEventListener("click", () => {
+  suggestionModal.style.display = "none";
+});
+
+// SUBMIT BUTTON
+submitSuggestion.addEventListener("click", () => {
+  let text = document.getElementById("suggestion-text").value.trim();
+
+  if (text === "") {
+    alert("Please write a suggestion before submitting.");
+    return;
+  }
+
+  alert("Thank you! Your suggestion has been submitted.");
+  document.getElementById("suggestion-text").value = "";
+  suggestionModal.style.display = "none";
+});
+
+// CLICK OUTSIDE TO CLOSE
+window.addEventListener("click", (e) => {
+  if (e.target === suggestionModal) {
+    suggestionModal.style.display = "none";
+  }
+});
